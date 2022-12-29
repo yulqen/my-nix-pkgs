@@ -1,3 +1,12 @@
+/*
+This is called with:
+
+  my-django-ninja = callPackage /path/to/this/default.nix {
+      buildPythonPackage = python3Packages.buildPythonPackage;
+  };
+
+*/
+
 { lib, buildPythonPackage, python3 }:
 
   buildPythonPackage rec {
